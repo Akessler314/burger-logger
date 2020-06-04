@@ -1,5 +1,5 @@
 //Create new burger 
-$(".create-form").on("submit", function(event) {
+$(".submit").on("click", function(event) {
 
     event.preventDefault();
 
@@ -30,6 +30,7 @@ $(".create-form").on("submit", function(event) {
         method: 'PUT',
         data: devourState
     }).then(function(data) {
+        console.log("NOM NOM NOM")
         location.reload();
     })
 })
